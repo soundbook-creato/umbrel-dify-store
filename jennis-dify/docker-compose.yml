@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: jennis-dify_proxy_1
+      APP_PORT: 8080
+      PROXY_AUTH_ADD: "false"
+
+  proxy:
+    # Forwards to Dify's nginx, published on the host at :8080 (umbrel_main_network gateway)
+    image: alpine/socat:1.8.1.3
+    command: TCP-LISTEN:8080,fork,reuseaddr TCP:10.21.0.1:8080
+    restart: on-failure
+    container_name: jennis-dify_proxy_1

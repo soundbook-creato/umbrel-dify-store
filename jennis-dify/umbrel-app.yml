@@ -1,0 +1,21 @@
+manifestVersion: 1
+id: jennis-dify
+category: ai
+name: Dify
+version: "1.0.1"
+tagline: LLM 앱 개발 플랫폼
+icon: https://avatars.githubusercontent.com/u/127165244
+description: >-
+  ~/dify 에서 docker compose로 실행 중인 Dify(포트 8080)를 Umbrel 대시보드에서 열 수 있게 해주는 바로가기 앱입니다.
+  Dify 본체는 ~/dify 의 docker compose가 관리합니다.
+developer: LangGenius
+website: https://dify.ai
+repo: https://github.com/langgenius/dify
+support: https://github.com/langgenius/dify/issues
+port: 5406
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+dependencies: []
+submitter: jennis
